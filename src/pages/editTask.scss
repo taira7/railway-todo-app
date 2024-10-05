@@ -6,6 +6,19 @@ $red: #ff3333;
   width: 1000px;
   margin: 0 auto;
 
+  @media (max-width: 768px) {
+    width: 95%;
+    // width: 768px;
+    margin-left: 20px;
+  }
+
+  @media (max-width: 320px) {
+    width: 95%;
+    margin-left: 0px;
+    padding-left: 6px;
+    padding-right: 5px;
+  }
+
   .error-message {
     color: $red;
   }
@@ -29,11 +42,33 @@ $red: #ff3333;
     border-radius: 5px;
   }
 
-  .edit-task-button {
+  @media (max-width: 320px) {
+    .delete-task-button {
+      margin-left: 23%;
+    }
+  }
+
+  .edit-task-button,
+  .edit-limit-button {
     background-color: #242f9b;
     color: #ffffff;
     width: 80px;
     height: 40px;
     border-radius: 5px;
+  }
+
+  .edit-limit-button {
+    display: block;
+    background-color: #242f9b;
+    color: #ffffff;
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+  }
+
+  @media (max-width: 320px) {
+    .edit-limit-button {
+      margin-left: 37%;
+    }
   }
 }

@@ -100,7 +100,11 @@ export const NewTask = () => {
           <br />
           <label>期限日時</label>
           <br />
-          <input type="datetime-local" onChange={handleLimitChange}></input>
+          <input
+            type="datetime-local"
+            onChange={handleLimitChange}
+            className="limit-input"
+          ></input>
           <br />
           <button
             type="button"

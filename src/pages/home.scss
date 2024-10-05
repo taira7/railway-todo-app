@@ -3,6 +3,19 @@
   list-style: none;
   width: 1000px;
 
+  @media (max-width: 768px) {
+    width: 95%;
+    // width: 768px;
+    margin-left: 20px;
+  }
+
+  @media (max-width: 320px) {
+    width: 100%;
+    // width: 768px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .error-message {
     color: #ff3333;
   }
@@ -13,6 +26,18 @@
 
     .list-menu {
       text-align: right;
+    }
+
+    @media (max-width: 320px) {
+      // フレックスレイアウトを無効化する
+      display: block;
+      text-align: left;
+
+      //下に改行
+      .list-menu {
+        margin-top: 10px;
+        text-align: right;
+      }
     }
   }
 
@@ -35,6 +60,12 @@
         outline: none; /* フォーカススタイルを無効化 */
         border: 2px solid #007bff;
       }
+      @media (max-width: 320px) {
+        width: 120px;
+        height: 40px;
+        margin-top: 23px;
+        margin-bottom: 10px;
+      }
     }
   }
 
@@ -44,6 +75,16 @@
     .tasks-header {
       display: flex;
       justify-content: space-between;
+
+      @media (max-width: 320px) {
+        .tasks-new {
+          // フレックスレイアウトを無効化する
+          display: block;
+          margin-top: 30px;
+          margin-bottom: 20px;
+          text-align: left;
+        }
+      }
     }
 
     .display-select-wrapper {
@@ -52,6 +93,14 @@
 
       .display-select {
         width: 100%;
+      }
+
+      @media (max-width: 320px) {
+        width: 100px;
+        margin: 0 0 25px auto;
+        .display-select {
+          width: 100%;
+        }
       }
     }
   }

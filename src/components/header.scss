@@ -10,6 +10,20 @@ $color-white: #ffffff;
   display: flex;
   justify-content: space-between;
 
+  @media (max-width: 320px) {
+    h1 {
+      padding-top: 17px;
+      padding-left: 15px;
+    }
+  }
+
+  @media (min-width: 321px) and (max-width: 768px) {
+    h1 {
+      padding-top: 17px;
+      padding-left: 15px;
+    }
+  }
+
   .sign-out-button {
     color: $color-white;
     margin: auto 25px auto auto;

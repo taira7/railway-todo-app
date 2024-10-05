@@ -275,7 +275,7 @@ export const EditTask = () => {
             onChange={handleLimitChange}
             className="edit-task-detail"
           ></input>
-          <button type="submit" className="edit-task-button">
+          <button type="submit" className="edit-limit-button">
             変更する
           </button>
         </form>

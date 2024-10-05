@@ -4,6 +4,12 @@
   width: 500px;
   margin: 0 auto;
 
+  @media (max-width: 320px) {
+    margin-top: 17px;
+    width: 310px;
+    text-align: center;
+  }
+
   .error-message {
     color: #ff3333;
   }
@@ -20,6 +26,19 @@
     font-size: large;
     height: 30px;
     margin-bottom: 25px;
+  }
+
+  @media (max-width: 320px) {
+    .email-input,
+    .name-input {
+      width: 95%;
+      margin: 0px 5px 25px 5px;
+    }
+
+    .password-input {
+      width: 95%;
+      margin: 0px 5px 50px 5px;
+    }
   }
 
   .signup-button {

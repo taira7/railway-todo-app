@@ -6,12 +6,33 @@ $red: #ff3333;
   width: 1000px;
   margin: 0 auto;
 
+  @media (max-width: 768px) {
+    width: 95%;
+    // width: 768px;
+    margin-left: 20px;
+  }
+
+  @media (max-width: 320px) {
+    width: 100%;
+    // width: 768px;
+    margin-left: 0px;
+  }
+
   .error-message {
     color: $red;
   }
 
+  @media (max-width: 320px) {
+    text-align: center;
+    margin-top: 17px;
+  }
+
   .edit-list-form {
     color: #555555;
+    @media (max-width: 320px) {
+      text-align: left;
+      margin-left: 7px;
+    }
 
     .edit-list-title {
       width: 300px;
@@ -25,6 +46,12 @@ $red: #ff3333;
       height: 40px;
       margin: 25px 5px;
       border-radius: 5px;
+    }
+
+    @media (max-width: 320px) {
+      .delete-list-button {
+        margin-left: 23%;
+      }
     }
 
     .edit-list-button {
